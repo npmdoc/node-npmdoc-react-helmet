@@ -1,0 +1,1285 @@
+<html><head></head><body><div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a href="https://github.com/nfl/react-helmet#readme">react-helmet (v5.0.2)</a>
+</h1>
+<h4>A document head manager for React</h4>
+<div class="apidocSectionDiv"><a href="#apidoc.tableOfContents" id="apidoc.tableOfContents"><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-helmet">module react-helmet</a><ol>
+
+        <li>
+
+            <span class="apidocSignatureSpan">boolean <span class="apidocSignatureSpan">react-helmet.</span>__esModule</span>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-helmet.Helmet">
+            function <span class="apidocSignatureSpan">react-helmet.</span>Helmet
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-helmet.default">
+            function <span class="apidocSignatureSpan">react-helmet.</span>default
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-helmet.</span>Helmet.propTypes</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-helmet.</span>Helmet.prototype</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-helmet.</span>HelmetUtils</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-helmet.Helmet">module react-helmet.Helmet</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-helmet.Helmet.Helmet">
+            function <span class="apidocSignatureSpan">react-helmet.</span>Helmet
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-helmet.Helmet.peek">
+            function <span class="apidocSignatureSpan">react-helmet.Helmet.</span>peek
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-helmet.Helmet.renderStatic">
+            function <span class="apidocSignatureSpan">react-helmet.Helmet.</span>renderStatic
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-helmet.Helmet.rewind">
+            function <span class="apidocSignatureSpan">react-helmet.Helmet.</span>rewind
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-helmet.Helmet.</span>defaultProps</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-helmet.Helmet.</span>propTypes</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-helmet.Helmet.propTypes">module react-helmet.Helmet.propTypes</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-helmet.Helmet.propTypes.base">
+            function <span class="apidocSignatureSpan">react-helmet.Helmet.propTypes.</span>base
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-helmet.Helmet.propTypes.bodyAttributes">
+            function <span class="apidocSignatureSpan">react-helmet.Helmet.propTypes.</span>bodyAttributes
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-helmet.Helmet.propTypes.children">
+            function <span class="apidocSignatureSpan">react-helmet.Helmet.propTypes.</span>children
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-helmet.Helmet.propTypes.defaultTitle">
+            function <span class="apidocSignatureSpan">react-helmet.Helmet.propTypes.</span>defaultTitle
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-helmet.Helmet.propTypes.encodeSpecialCharacters">
+            function <span class="apidocSignatureSpan">react-helmet.Helmet.propTypes.</span>encodeSpecialCharacters
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-helmet.Helmet.propTypes.htmlAttributes">
+            function <span class="apidocSignatureSpan">react-helmet.Helmet.propTypes.</span>htmlAttributes
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-helmet.Helmet.propTypes.link">
+            function <span class="apidocSignatureSpan">react-helmet.Helmet.propTypes.</span>link
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-helmet.Helmet.propTypes.meta">
+            function <span class="apidocSignatureSpan">react-helmet.Helmet.propTypes.</span>meta
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-helmet.Helmet.propTypes.noscript">
+            function <span class="apidocSignatureSpan">react-helmet.Helmet.propTypes.</span>noscript
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-helmet.Helmet.propTypes.onChangeClientState">
+            function <span class="apidocSignatureSpan">react-helmet.Helmet.propTypes.</span>onChangeClientState
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-helmet.Helmet.propTypes.script">
+            function <span class="apidocSignatureSpan">react-helmet.Helmet.propTypes.</span>script
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-helmet.Helmet.propTypes.style">
+            function <span class="apidocSignatureSpan">react-helmet.Helmet.propTypes.</span>style
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-helmet.Helmet.propTypes.title">
+            function <span class="apidocSignatureSpan">react-helmet.Helmet.propTypes.</span>title
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-helmet.Helmet.propTypes.titleAttributes">
+            function <span class="apidocSignatureSpan">react-helmet.Helmet.propTypes.</span>titleAttributes
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-helmet.Helmet.propTypes.titleTemplate">
+            function <span class="apidocSignatureSpan">react-helmet.Helmet.propTypes.</span>titleTemplate
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-helmet.Helmet.prototype">module react-helmet.Helmet.prototype</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-helmet.Helmet.prototype.flattenArrayTypeChildren">
+            function <span class="apidocSignatureSpan">react-helmet.Helmet.prototype.</span>flattenArrayTypeChildren
+            <span class="apidocSignatureSpan">(_ref)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-helmet.Helmet.prototype.mapArrayTypeChildrenToProps">
+            function <span class="apidocSignatureSpan">react-helmet.Helmet.prototype.</span>mapArrayTypeChildrenToProps
+            <span class="apidocSignatureSpan">(arrayTypeChildren, newProps)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-helmet.Helmet.prototype.mapChildrenToProps">
+            function <span class="apidocSignatureSpan">react-helmet.Helmet.prototype.</span>mapChildrenToProps
+            <span class="apidocSignatureSpan">(children, newProps)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-helmet.Helmet.prototype.mapNestedChildrenToProps">
+            function <span class="apidocSignatureSpan">react-helmet.Helmet.prototype.</span>mapNestedChildrenToProps
+            <span class="apidocSignatureSpan">(child, nestedChildren)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-helmet.Helmet.prototype.mapObjectTypeChildren">
+            function <span class="apidocSignatureSpan">react-helmet.Helmet.prototype.</span>mapObjectTypeChildren
+            <span class="apidocSignatureSpan">(_ref2)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-helmet.Helmet.prototype.render">
+            function <span class="apidocSignatureSpan">react-helmet.Helmet.prototype.</span>render
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-helmet.Helmet.prototype.shouldComponentUpdate">
+            function <span class="apidocSignatureSpan">react-helmet.Helmet.prototype.</span>shouldComponentUpdate
+            <span class="apidocSignatureSpan">(nextProps)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-helmet.Helmet.prototype.warnOnInvalidChildren">
+            function <span class="apidocSignatureSpan">react-helmet.Helmet.prototype.</span>warnOnInvalidChildren
+            <span class="apidocSignatureSpan">(child, nestedChildren)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-helmet.HelmetUtils">module react-helmet.HelmetUtils</a><ol>
+
+        <li>
+
+            <span class="apidocSignatureSpan">boolean <span class="apidocSignatureSpan">react-helmet.HelmetUtils.</span>__esModule</span>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-helmet.HelmetUtils.convertReactPropstoHtmlAttributes">
+            function <span class="apidocSignatureSpan">react-helmet.HelmetUtils.</span>convertReactPropstoHtmlAttributes
+            <span class="apidocSignatureSpan">(props)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-helmet.HelmetUtils.handleClientStateChange">
+            function <span class="apidocSignatureSpan">react-helmet.HelmetUtils.</span>handleClientStateChange
+            <span class="apidocSignatureSpan">(newState)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-helmet.HelmetUtils.mapStateOnServer">
+            function <span class="apidocSignatureSpan">react-helmet.HelmetUtils.</span>mapStateOnServer
+            <span class="apidocSignatureSpan">(_ref)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-helmet.HelmetUtils.reducePropsToState">
+            function <span class="apidocSignatureSpan">react-helmet.HelmetUtils.</span>reducePropsToState
+            <span class="apidocSignatureSpan">(propsList)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-helmet.HelmetUtils.requestIdleCallback">
+            function <span class="apidocSignatureSpan">react-helmet.HelmetUtils.</span>requestIdleCallback
+            <span class="apidocSignatureSpan">(cb)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-helmet.HelmetUtils.warn">
+            function <span class="apidocSignatureSpan">react-helmet.HelmetUtils.</span>warn
+            <span class="apidocSignatureSpan">(msg)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-helmet" id="apidoc.module.react-helmet">module react-helmet</a></h1>
+
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-helmet.Helmet" id="apidoc.element.react-helmet.Helmet">
+        function <span class="apidocSignatureSpan">react-helmet.</span>Helmet
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function HelmetWrapper() {
+    _classCallCheck(this, HelmetWrapper);
+
+    return _possibleConstructorReturn(this, _React$Component.apply(this, arguments));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-helmet.default" id="apidoc.element.react-helmet.default">
+        function <span class="apidocSignatureSpan">react-helmet.</span>default
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function HelmetWrapper() {
+    _classCallCheck(this, HelmetWrapper);
+
+    return _possibleConstructorReturn(this, _React$Component.apply(this, arguments));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-helmet.Helmet" id="apidoc.module.react-helmet.Helmet">module react-helmet.Helmet</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-helmet.Helmet.Helmet" id="apidoc.element.react-helmet.Helmet.Helmet">
+        function <span class="apidocSignatureSpan">react-helmet.</span>Helmet
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function HelmetWrapper() {
+    _classCallCheck(this, HelmetWrapper);
+
+    return _possibleConstructorReturn(this, _React$Component.apply(this, arguments));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-helmet.Helmet.peek" id="apidoc.element.react-helmet.Helmet.peek">
+        function <span class="apidocSignatureSpan">react-helmet.Helmet.</span>peek
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function peek() {
+  return state;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-helmet.Helmet.renderStatic" id="apidoc.element.react-helmet.Helmet.renderStatic">
+        function <span class="apidocSignatureSpan">react-helmet.Helmet.</span>renderStatic
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">renderStatic = function () {
+    var mappedState = Component.rewind();
+    if (!mappedState) {
+        // provide fallback if mappedState is undefined
+        mappedState = (0, _HelmetUtils.mapStateOnServer)({
+            baseTag: [],
+            bodyAttributes: {},
+            encodeSpecialCharacters: true,
+            htmlAttributes: {},
+            linkTags: [],
+            metaTags: [],
+            noscriptTags: [],
+            scriptTags: [],
+            styleTags: [],
+            title: "",
+            titleAttributes: {}
+        });
+    }
+
+    return mappedState;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+npm:
+```bash
+npm install --save react-helmet
+```
+
+## Server Usage
+To use on the server, call `Helmet.<span class="apidocCodeKeywordSpan">renderStatic</span>()` after `ReactDOMServer.renderToString
+` or `ReactDOMServer.renderToStaticMarkup` to get the head data for use in your prerender.
+
+Because this component keeps track of mounted instances, **you have to make sure to call `renderStatic` on server**, or you'
+;ll get a memory leak.
+
+```javascript
+ReactDOMServer.renderToString(&lt;Handler /&gt;);
+const helmet = Helmet.renderStatic();
+```
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-helmet.Helmet.rewind" id="apidoc.element.react-helmet.Helmet.rewind">
+        function <span class="apidocSignatureSpan">react-helmet.Helmet.</span>rewind
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">rewind = function () {
+    var mappedState = Component.rewind();
+    if (!mappedState) {
+        // provide fallback if mappedState is undefined
+        mappedState = (0, _HelmetUtils.mapStateOnServer)({
+            baseTag: [],
+            bodyAttributes: {},
+            encodeSpecialCharacters: true,
+            htmlAttributes: {},
+            linkTags: [],
+            metaTags: [],
+            noscriptTags: [],
+            scriptTags: [],
+            styleTags: [],
+            title: "",
+            titleAttributes: {}
+        });
+    }
+
+    return mappedState;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-helmet.Helmet.propTypes" id="apidoc.module.react-helmet.Helmet.propTypes">module react-helmet.Helmet.propTypes</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-helmet.Helmet.propTypes.base" id="apidoc.element.react-helmet.Helmet.propTypes.base">
+        function <span class="apidocSignatureSpan">react-helmet.Helmet.propTypes.</span>base
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">base = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-helmet.Helmet.propTypes.bodyAttributes" id="apidoc.element.react-helmet.Helmet.propTypes.bodyAttributes">
+        function <span class="apidocSignatureSpan">react-helmet.Helmet.propTypes.</span>bodyAttributes
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">bodyAttributes = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-helmet.Helmet.propTypes.children" id="apidoc.element.react-helmet.Helmet.propTypes.children">
+        function <span class="apidocSignatureSpan">react-helmet.Helmet.propTypes.</span>children
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">children = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-helmet.Helmet.propTypes.defaultTitle" id="apidoc.element.react-helmet.Helmet.propTypes.defaultTitle">
+        function <span class="apidocSignatureSpan">react-helmet.Helmet.propTypes.</span>defaultTitle
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">defaultTitle = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-helmet.Helmet.propTypes.encodeSpecialCharacters" id="apidoc.element.react-helmet.Helmet.propTypes.encodeSpecialCharacters">
+        function <span class="apidocSignatureSpan">react-helmet.Helmet.propTypes.</span>encodeSpecialCharacters
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">encodeSpecialCharacters = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-helmet.Helmet.propTypes.htmlAttributes" id="apidoc.element.react-helmet.Helmet.propTypes.htmlAttributes">
+        function <span class="apidocSignatureSpan">react-helmet.Helmet.propTypes.</span>htmlAttributes
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">htmlAttributes = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-helmet.Helmet.propTypes.link" id="apidoc.element.react-helmet.Helmet.propTypes.link">
+        function <span class="apidocSignatureSpan">react-helmet.Helmet.propTypes.</span>link
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">link = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-helmet.Helmet.propTypes.meta" id="apidoc.element.react-helmet.Helmet.propTypes.meta">
+        function <span class="apidocSignatureSpan">react-helmet.Helmet.propTypes.</span>meta
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">meta = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-helmet.Helmet.propTypes.noscript" id="apidoc.element.react-helmet.Helmet.propTypes.noscript">
+        function <span class="apidocSignatureSpan">react-helmet.Helmet.propTypes.</span>noscript
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">noscript = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-helmet.Helmet.propTypes.onChangeClientState" id="apidoc.element.react-helmet.Helmet.propTypes.onChangeClientState">
+        function <span class="apidocSignatureSpan">react-helmet.Helmet.propTypes.</span>onChangeClientState
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">onChangeClientState = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-helmet.Helmet.propTypes.script" id="apidoc.element.react-helmet.Helmet.propTypes.script">
+        function <span class="apidocSignatureSpan">react-helmet.Helmet.propTypes.</span>script
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">script = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-helmet.Helmet.propTypes.style" id="apidoc.element.react-helmet.Helmet.propTypes.style">
+        function <span class="apidocSignatureSpan">react-helmet.Helmet.propTypes.</span>style
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">style = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-helmet.Helmet.propTypes.title" id="apidoc.element.react-helmet.Helmet.propTypes.title">
+        function <span class="apidocSignatureSpan">react-helmet.Helmet.propTypes.</span>title
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">title = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-helmet.Helmet.propTypes.titleAttributes" id="apidoc.element.react-helmet.Helmet.propTypes.titleAttributes">
+        function <span class="apidocSignatureSpan">react-helmet.Helmet.propTypes.</span>titleAttributes
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">titleAttributes = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-helmet.Helmet.propTypes.titleTemplate" id="apidoc.element.react-helmet.Helmet.propTypes.titleTemplate">
+        function <span class="apidocSignatureSpan">react-helmet.Helmet.propTypes.</span>titleTemplate
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">titleTemplate = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-helmet.Helmet.prototype" id="apidoc.module.react-helmet.Helmet.prototype">module react-helmet.Helmet.prototype</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-helmet.Helmet.prototype.flattenArrayTypeChildren" id="apidoc.element.react-helmet.Helmet.prototype.flattenArrayTypeChildren">
+        function <span class="apidocSignatureSpan">react-helmet.Helmet.prototype.</span>flattenArrayTypeChildren
+        <span class="apidocSignatureSpan">(_ref)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function flattenArrayTypeChildren(_ref) {
+    var _extends2;
+
+    var child = _ref.child,
+        arrayTypeChildren = _ref.arrayTypeChildren,
+        newChildProps = _ref.newChildProps,
+        nestedChildren = _ref.nestedChildren;
+
+    return _extends({}, arrayTypeChildren, (_extends2 = {}, _extends2[child.type] = [].concat(arrayTypeChildren[child.type] || [], [
+_extends({}, newChildProps, this.mapNestedChildrenToProps(child, nestedChildren))]), _extends2));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-helmet.Helmet.prototype.mapArrayTypeChildrenToProps" id="apidoc.element.react-helmet.Helmet.prototype.mapArrayTypeChildrenToProps">
+        function <span class="apidocSignatureSpan">react-helmet.Helmet.prototype.</span>mapArrayTypeChildrenToProps
+        <span class="apidocSignatureSpan">(arrayTypeChildren, newProps)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function mapArrayTypeChildrenToProps(arrayTypeChildren, newProps) {
+    var newFlattenedProps = _extends({}, newProps);
+
+    Object.keys(arrayTypeChildren).forEach(function (arrayChildName) {
+        var _extends5;
+
+        newFlattenedProps = _extends({}, newFlattenedProps, (_extends5 = {}, _extends5[arrayChildName] = arrayTypeChildren[arrayChildName
+], _extends5));
+    });
+
+    return newFlattenedProps;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-helmet.Helmet.prototype.mapChildrenToProps" id="apidoc.element.react-helmet.Helmet.prototype.mapChildrenToProps">
+        function <span class="apidocSignatureSpan">react-helmet.Helmet.prototype.</span>mapChildrenToProps
+        <span class="apidocSignatureSpan">(children, newProps)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function mapChildrenToProps(children, newProps) {
+    var _this2 = this;
+
+    var arrayTypeChildren = {};
+
+    _react2.default.Children.forEach(children, function (child) {
+        if (!child || !child.props) {
+            return;
+        }
+
+        var _child$props = child.props,
+            nestedChildren = _child$props.children,
+            childProps = _objectWithoutProperties(_child$props, ["children"]);
+
+        var newChildProps = (0, _HelmetUtils.convertReactPropstoHtmlAttributes)(childProps);
+
+        _this2.warnOnInvalidChildren(child, nestedChildren);
+
+        switch (child.type) {
+            case _HelmetConstants.TAG_NAMES.LINK:
+            case _HelmetConstants.TAG_NAMES.META:
+            case _HelmetConstants.TAG_NAMES.NOSCRIPT:
+            case _HelmetConstants.TAG_NAMES.SCRIPT:
+            case _HelmetConstants.TAG_NAMES.STYLE:
+                arrayTypeChildren = _this2.flattenArrayTypeChildren({
+                    child: child,
+                    arrayTypeChildren: arrayTypeChildren,
+                    newChildProps: newChildProps,
+                    nestedChildren: nestedChildren
+                });
+                break;
+
+            default:
+                newProps = _this2.mapObjectTypeChildren({
+                    child: child,
+                    newProps: newProps,
+                    newChildProps: newChildProps,
+                    nestedChildren: nestedChildren
+                });
+                break;
+        }
+    });
+
+    newProps = this.mapArrayTypeChildrenToProps(arrayTypeChildren, newProps);
+    return newProps;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-helmet.Helmet.prototype.mapNestedChildrenToProps" id="apidoc.element.react-helmet.Helmet.prototype.mapNestedChildrenToProps">
+        function <span class="apidocSignatureSpan">react-helmet.Helmet.prototype.</span>mapNestedChildrenToProps
+        <span class="apidocSignatureSpan">(child, nestedChildren)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function mapNestedChildrenToProps(child, nestedChildren) {
+    if (!nestedChildren) {
+        return null;
+    }
+
+    switch (child.type) {
+        case _HelmetConstants.TAG_NAMES.SCRIPT:
+        case _HelmetConstants.TAG_NAMES.NOSCRIPT:
+            return {
+                innerHTML: nestedChildren
+            };
+
+        case _HelmetConstants.TAG_NAMES.STYLE:
+            return {
+                cssText: nestedChildren
+            };
+    }
+
+    throw new Error("&lt;" + child.type + " /&gt; elements are self-closing and can not contain children. Refer to our API for more information
+.");
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-helmet.Helmet.prototype.mapObjectTypeChildren" id="apidoc.element.react-helmet.Helmet.prototype.mapObjectTypeChildren">
+        function <span class="apidocSignatureSpan">react-helmet.Helmet.prototype.</span>mapObjectTypeChildren
+        <span class="apidocSignatureSpan">(_ref2)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function mapObjectTypeChildren(_ref2) {
+    var _extends3, _extends4;
+
+    var child = _ref2.child,
+        newProps = _ref2.newProps,
+        newChildProps = _ref2.newChildProps,
+        nestedChildren = _ref2.nestedChildren;
+
+    switch (child.type) {
+        case _HelmetConstants.TAG_NAMES.TITLE:
+            return _extends({}, newProps, (_extends3 = {}, _extends3[child.type] = nestedChildren, _extends3.titleAttributes = _extends
+({}, newChildProps), _extends3));
+
+        case _HelmetConstants.TAG_NAMES.BODY:
+            return _extends({}, newProps, {
+                bodyAttributes: _extends({}, newChildProps)
+            });
+
+        case _HelmetConstants.TAG_NAMES.HTML:
+            return _extends({}, newProps, {
+                htmlAttributes: _extends({}, newChildProps)
+            });
+    }
+
+    return _extends({}, newProps, (_extends4 = {}, _extends4[child.type] = _extends({}, newChildProps), _extends4));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-helmet.Helmet.prototype.render" id="apidoc.element.react-helmet.Helmet.prototype.render">
+        function <span class="apidocSignatureSpan">react-helmet.Helmet.prototype.</span>render
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function render() {
+    var _props = this.props,
+        children = _props.children,
+        props = _objectWithoutProperties(_props, ["children"]);
+
+    var newProps = _extends({}, props);
+
+    if (children) {
+        newProps = this.mapChildrenToProps(children, newProps);
+    }
+
+    return _react2.default.createElement(Component, newProps);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-helmet.Helmet.prototype.shouldComponentUpdate" id="apidoc.element.react-helmet.Helmet.prototype.shouldComponentUpdate">
+        function <span class="apidocSignatureSpan">react-helmet.Helmet.prototype.</span>shouldComponentUpdate
+        <span class="apidocSignatureSpan">(nextProps)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function shouldComponentUpdate(nextProps) {
+    return !(0, _deepEqual2.default)(this.props, nextProps);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-helmet.Helmet.prototype.warnOnInvalidChildren" id="apidoc.element.react-helmet.Helmet.prototype.warnOnInvalidChildren">
+        function <span class="apidocSignatureSpan">react-helmet.Helmet.prototype.</span>warnOnInvalidChildren
+        <span class="apidocSignatureSpan">(child, nestedChildren)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function warnOnInvalidChildren(child, nestedChildren) {
+    if (process.env.NODE_ENV !== "production") {
+        if (!_HelmetConstants.VALID_TAG_NAMES.some(function (name) {
+            return child.type === name;
+        })) {
+            if (typeof child.type === "function") {
+                return (0, _HelmetUtils.warn)("You may be attempting to nest &lt;Helmet&gt; components within each other, which is not
+ allowed. Refer to our API for more information.");
+            }
+
+            return (0, _HelmetUtils.warn)("Only elements types " + _HelmetConstants.VALID_TAG_NAMES.join(", ") + " are allowed.
+Helmet does not support rendering &lt;" + child.type + "&gt; elements. Refer to our API for more information.");
+        }
+
+        if (nestedChildren &amp;&amp; typeof nestedChildren !== "string") {
+            throw new Error("Helmet expects a string as a child of &lt;" + child.type + "&gt;. Did you forget to wrap your children in
+ braces? ( &lt;" + child.type + "&gt;{``}&lt;/" + child.type + "&gt; ) Refer to our API for more information.");
+        }
+    }
+
+    return true;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-helmet.HelmetUtils" id="apidoc.module.react-helmet.HelmetUtils">module react-helmet.HelmetUtils</a></h1>
+
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-helmet.HelmetUtils.convertReactPropstoHtmlAttributes" id="apidoc.element.react-helmet.HelmetUtils.convertReactPropstoHtmlAttributes">
+        function <span class="apidocSignatureSpan">react-helmet.HelmetUtils.</span>convertReactPropstoHtmlAttributes
+        <span class="apidocSignatureSpan">(props)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function convertReactPropstoHtmlAttributes(props) {
+    var initAttributes = arguments.length &gt; 1 &amp;&amp; arguments[1] !== undefined ? arguments[1] : {};
+
+    return Object.keys(props).reduce(function (obj, key) {
+        obj[_HelmetConstants.HTML_TAG_MAP[key] || key] = props[key];
+        return obj;
+    }, initAttributes);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-helmet.HelmetUtils.handleClientStateChange" id="apidoc.element.react-helmet.HelmetUtils.handleClientStateChange">
+        function <span class="apidocSignatureSpan">react-helmet.HelmetUtils.</span>handleClientStateChange
+        <span class="apidocSignatureSpan">(newState)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function handleClientStateChange(newState) {
+    var baseTag = newState.baseTag,
+        bodyAttributes = newState.bodyAttributes,
+        htmlAttributes = newState.htmlAttributes,
+        linkTags = newState.linkTags,
+        metaTags = newState.metaTags,
+        noscriptTags = newState.noscriptTags,
+        onChangeClientState = newState.onChangeClientState,
+        scriptTags = newState.scriptTags,
+        styleTags = newState.styleTags,
+        title = newState.title,
+        titleAttributes = newState.titleAttributes;
+
+
+    if (_helmetIdleCallback) {
+        cancelIdleCallback(_helmetIdleCallback);
+    }
+
+    _helmetIdleCallback = requestIdleCallback(function () {
+        updateAttributes(_HelmetConstants.TAG_NAMES.BODY, bodyAttributes);
+        updateAttributes(_HelmetConstants.TAG_NAMES.HTML, htmlAttributes);
+
+        updateTitle(title, titleAttributes);
+
+        var tagUpdates = {
+            baseTag: updateTags(_HelmetConstants.TAG_NAMES.BASE, baseTag),
+            linkTags: updateTags(_HelmetConstants.TAG_NAMES.LINK, linkTags),
+            metaTags: updateTags(_HelmetConstants.TAG_NAMES.META, metaTags),
+            noscriptTags: updateTags(_HelmetConstants.TAG_NAMES.NOSCRIPT, noscriptTags),
+            scriptTags: updateTags(_HelmetConstants.TAG_NAMES.SCRIPT, scriptTags),
+            styleTags: updateTags(_HelmetConstants.TAG_NAMES.STYLE, styleTags)
+        };
+
+        var addedTags = {};
+        var removedTags = {};
+
+        Object.keys(tagUpdates).forEach(function (tagType) {
+            var _tagUpdates$tagType = tagUpdates[tagType],
+                newTags = _tagUpdates$tagType.newTags,
+                oldTags = _tagUpdates$tagType.oldTags;
+
+
+            if (newTags.length) {
+                addedTags[tagType] = newTags;
+            }
+            if (oldTags.length) {
+                removedTags[tagType] = tagUpdates[tagType].oldTags;
+            }
+        });
+
+        _helmetIdleCallback = null;
+        onChangeClientState(newState, addedTags, removedTags);
+    });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-helmet.HelmetUtils.mapStateOnServer" id="apidoc.element.react-helmet.HelmetUtils.mapStateOnServer">
+        function <span class="apidocSignatureSpan">react-helmet.HelmetUtils.</span>mapStateOnServer
+        <span class="apidocSignatureSpan">(_ref)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function mapStateOnServer(_ref) {
+    var baseTag = _ref.baseTag,
+        bodyAttributes = _ref.bodyAttributes,
+        encode = _ref.encode,
+        htmlAttributes = _ref.htmlAttributes,
+        linkTags = _ref.linkTags,
+        metaTags = _ref.metaTags,
+        noscriptTags = _ref.noscriptTags,
+        scriptTags = _ref.scriptTags,
+        styleTags = _ref.styleTags,
+        _ref$title = _ref.title,
+        title = _ref$title === undefined ? "" : _ref$title,
+        titleAttributes = _ref.titleAttributes;
+    return {
+        base: getMethodsForTag(_HelmetConstants.TAG_NAMES.BASE, baseTag, encode),
+        bodyAttributes: getMethodsForTag(_HelmetConstants.ATTRIBUTE_NAMES.BODY, bodyAttributes, encode),
+        htmlAttributes: getMethodsForTag(_HelmetConstants.ATTRIBUTE_NAMES.HTML, htmlAttributes, encode),
+        link: getMethodsForTag(_HelmetConstants.TAG_NAMES.LINK, linkTags, encode),
+        meta: getMethodsForTag(_HelmetConstants.TAG_NAMES.META, metaTags, encode),
+        noscript: getMethodsForTag(_HelmetConstants.TAG_NAMES.NOSCRIPT, noscriptTags, encode),
+        script: getMethodsForTag(_HelmetConstants.TAG_NAMES.SCRIPT, scriptTags, encode),
+        style: getMethodsForTag(_HelmetConstants.TAG_NAMES.STYLE, styleTags, encode),
+        title: getMethodsForTag(_HelmetConstants.TAG_NAMES.TITLE, { title: title, titleAttributes: titleAttributes }, encode)
+    };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-helmet.HelmetUtils.reducePropsToState" id="apidoc.element.react-helmet.HelmetUtils.reducePropsToState">
+        function <span class="apidocSignatureSpan">react-helmet.HelmetUtils.</span>reducePropsToState
+        <span class="apidocSignatureSpan">(propsList)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function reducePropsToState(propsList) {
+    return {
+        baseTag: getBaseTagFromPropsList([_HelmetConstants.TAG_PROPERTIES.HREF], propsList),
+        bodyAttributes: getAttributesFromPropsList(_HelmetConstants.ATTRIBUTE_NAMES.BODY, propsList),
+        encode: getInnermostProperty(propsList, _HelmetConstants.HELMET_PROPS.ENCODE_SPECIAL_CHARACTERS),
+        htmlAttributes: getAttributesFromPropsList(_HelmetConstants.ATTRIBUTE_NAMES.HTML, propsList),
+        linkTags: getTagsFromPropsList(_HelmetConstants.TAG_NAMES.LINK, [_HelmetConstants.TAG_PROPERTIES.REL, _HelmetConstants.TAG_PROPERTIES
+.HREF], propsList),
+        metaTags: getTagsFromPropsList(_HelmetConstants.TAG_NAMES.META, [_HelmetConstants.TAG_PROPERTIES.NAME, _HelmetConstants.
+TAG_PROPERTIES.CHARSET, _HelmetConstants.TAG_PROPERTIES.HTTPEQUIV, _HelmetConstants.TAG_PROPERTIES.PROPERTY, _HelmetConstants.TAG_PROPERTIES
+.ITEM_PROP], propsList),
+        noscriptTags: getTagsFromPropsList(_HelmetConstants.TAG_NAMES.NOSCRIPT, [_HelmetConstants.TAG_PROPERTIES.INNER_HTML], propsList
+),
+        onChangeClientState: getOnChangeClientState(propsList),
+        scriptTags: getTagsFromPropsList(_HelmetConstants.TAG_NAMES.SCRIPT, [_HelmetConstants.TAG_PROPERTIES.SRC, _HelmetConstants
+.TAG_PROPERTIES.INNER_HTML], propsList),
+        styleTags: getTagsFromPropsList(_HelmetConstants.TAG_NAMES.STYLE, [_HelmetConstants.TAG_PROPERTIES.CSS_TEXT], propsList),
+        title: getTitleFromPropsList(propsList),
+        titleAttributes: getAttributesFromPropsList(_HelmetConstants.ATTRIBUTE_NAMES.TITLE, propsList)
+    };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-helmet.HelmetUtils.requestIdleCallback" id="apidoc.element.react-helmet.HelmetUtils.requestIdleCallback">
+        function <span class="apidocSignatureSpan">react-helmet.HelmetUtils.</span>requestIdleCallback
+        <span class="apidocSignatureSpan">(cb)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">requestIdleCallback = function (cb) {
+    var start = Date.now();
+    return setTimeout(function () {
+        cb({
+            didTimeout: false,
+            timeRemaining: function timeRemaining() {
+                return Math.max(0, 50 - (Date.now() - start));
+            }
+        });
+    }, 1);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-helmet.HelmetUtils.warn" id="apidoc.element.react-helmet.HelmetUtils.warn">
+        function <span class="apidocSignatureSpan">react-helmet.HelmetUtils.</span>warn
+        <span class="apidocSignatureSpan">(msg)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function warn(msg) {
+    return console &amp;&amp; typeof console.warn === "function" &amp;&amp; console.warn(msg);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+return function (id) {
+    return clearTimeout(id);
+};
+}();
+
+var warn = function warn(msg) {
+return console &amp;&amp; typeof console.warn === "function" &amp;&amp; console.<span class="apidocCodeKeywordSpan
+">warn</span>(msg);
+};
+
+var _helmetIdleCallback = null;
+
+var handleClientStateChange = function handleClientStateChange(newState) {
+var baseTag = newState.baseTag,
+    bodyAttributes = newState.bodyAttributes,
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
+</body></html>
