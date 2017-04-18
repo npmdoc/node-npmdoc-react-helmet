@@ -1,4 +1,4 @@
-<div class="apidocDiv">
+<html><head></head><body><div class="apidocDiv">
 <style>
 /*csslint
 */
@@ -47,17 +47,10 @@
 }
 </style>
 <h1>api documentation for
-    <a
-
-        href="https://github.com/nfl/react-helmet#readme"
-
-    >react-helmet (v5.0.3)</a>
+    <a href="https://github.com/nfl/react-helmet#readme">react-helmet (v5.0.3)</a>
 </h1>
 <h4>A document head manager for React</h4>
-<div class="apidocSectionDiv"><a
-    href="#apidoc.tableOfContents"
-    id="apidoc.tableOfContents"
-><h1>table of contents</h1></a><ol>
+<div class="apidocSectionDiv"><a href="#apidoc.tableOfContents" id="apidoc.tableOfContents"><h1>table of contents</h1></a><ol>
 
     <li class="apidocModuleLi"><a href="#apidoc.module.react-helmet">module react-helmet</a><ol>
 
@@ -762,7 +755,7 @@ _extends({}, newChildProps, this.mapNestedChildrenToProps(child, nestedChildren)
 
         var _child$props = child.props,
             nestedChildren = _child$props.children,
-            childProps = _objectWithoutProperties(_child$props, [&#x22;children&#x22;]);
+            childProps = _objectWithoutProperties(_child$props, ["children"]);
 
         var newChildProps = (0, _HelmetUtils.convertReactPropstoHtmlAttributes)(childProps);
 
@@ -826,8 +819,8 @@ _extends({}, newChildProps, this.mapNestedChildrenToProps(child, nestedChildren)
             };
     }
 
-    throw new Error(&#x22;&#x3c;&#x22; + child.type + &#x22; /&#x3e; elements are self-closing and can not contain children. Refer to our API for more information
-.&#x22;);
+    throw new Error("&lt;" + child.type + " /&gt; elements are self-closing and can not contain children. Refer to our API for more information
+.");
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -882,7 +875,7 @@ _extends({}, newChildProps, this.mapNestedChildrenToProps(child, nestedChildren)
     <li>description and source-code<pre class="apidocCodePre">function render() {
     var _props = this.props,
         children = _props.children,
-        props = _objectWithoutProperties(_props, [&#x22;children&#x22;]);
+        props = _objectWithoutProperties(_props, ["children"]);
 
     var newProps = _extends({}, props);
 
@@ -920,22 +913,22 @@ _extends({}, newChildProps, this.mapNestedChildrenToProps(child, nestedChildren)
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function warnOnInvalidChildren(child, nestedChildren) {
-    if (process.env.NODE_ENV !== &#x22;production&#x22;) {
+    if (process.env.NODE_ENV !== "production") {
         if (!_HelmetConstants.VALID_TAG_NAMES.some(function (name) {
             return child.type === name;
         })) {
-            if (typeof child.type === &#x22;function&#x22;) {
-                return (0, _HelmetUtils.warn)(&#x22;You may be attempting to nest &#x3c;Helmet&#x3e; components within each other, which is not
- allowed. Refer to our API for more information.&#x22;);
+            if (typeof child.type === "function") {
+                return (0, _HelmetUtils.warn)("You may be attempting to nest &lt;Helmet&gt; components within each other, which is not
+ allowed. Refer to our API for more information.");
             }
 
-            return (0, _HelmetUtils.warn)(&#x22;Only elements types &#x22; + _HelmetConstants.VALID_TAG_NAMES.join(&#x22;, &#x22;) + &#x22; are allowed.
-Helmet does not support rendering &#x3c;&#x22; + child.type + &#x22;&#x3e; elements. Refer to our API for more information.&#x22;);
+            return (0, _HelmetUtils.warn)("Only elements types " + _HelmetConstants.VALID_TAG_NAMES.join(", ") + " are allowed.
+Helmet does not support rendering &lt;" + child.type + "&gt; elements. Refer to our API for more information.");
         }
 
-        if (nestedChildren &#x26;&#x26; typeof nestedChildren !== &#x22;string&#x22;) {
-            throw new Error(&#x22;Helmet expects a string as a child of &#x3c;&#x22; + child.type + &#x22;&#x3e;. Did you forget to wrap your children in
- braces? ( &#x3c;&#x22; + child.type + &#x22;&#x3e;{``}&#x3c;/&#x22; + child.type + &#x22;&#x3e; ) Refer to our API for more information.&#x22;);
+        if (nestedChildren &amp;&amp; typeof nestedChildren !== "string") {
+            throw new Error("Helmet expects a string as a child of &lt;" + child.type + "&gt;. Did you forget to wrap your children in
+ braces? ( &lt;" + child.type + "&gt;{``}&lt;/" + child.type + "&gt; ) Refer to our API for more information.");
         }
     }
 
@@ -967,7 +960,7 @@ Helmet does not support rendering &#x3c;&#x22; + child.type + &#x22;&#x3e; eleme
             noscriptTags: [],
             scriptTags: [],
             styleTags: [],
-            title: &#x22;&#x22;,
+            title: "",
             titleAttributes: {}
         });
     }
@@ -1060,7 +1053,7 @@ Helmet does not support rendering &#x3c;&#x22; + child.type + &#x22;&#x3e; eleme
             noscriptTags: [],
             scriptTags: [],
             styleTags: [],
-            title: &#x22;&#x22;,
+            title: "",
             titleAttributes: {}
         });
     }
@@ -1078,11 +1071,11 @@ npm install --save react-helmet
 To use on the server, call `Helmet.<span class="apidocCodeKeywordSpan">renderStatic</span>()` after `ReactDOMServer.renderToString
 ` or `ReactDOMServer.renderToStaticMarkup` to get the head data for use in your prerender.
 
-Because this component keeps track of mounted instances, **you have to make sure to call `renderStatic` on server**, or you&#x27
+Because this component keeps track of mounted instances, **you have to make sure to call `renderStatic` on server**, or you'
 ;ll get a memory leak.
 
 ```javascript
-ReactDOMServer.renderToString(&#x3c;Handler /&#x3e;);
+ReactDOMServer.renderToString(&lt;Handler /&gt;);
 const helmet = Helmet.renderStatic();
 ```
 ...</pre></li>
@@ -1111,7 +1104,7 @@ const helmet = Helmet.renderStatic();
             noscriptTags: [],
             scriptTags: [],
             styleTags: [],
-            title: &#x22;&#x22;,
+            title: "",
             titleAttributes: {}
         });
     }
@@ -1418,7 +1411,7 @@ _extends({}, newChildProps, this.mapNestedChildrenToProps(child, nestedChildren)
 
         var _child$props = child.props,
             nestedChildren = _child$props.children,
-            childProps = _objectWithoutProperties(_child$props, [&#x22;children&#x22;]);
+            childProps = _objectWithoutProperties(_child$props, ["children"]);
 
         var newChildProps = (0, _HelmetUtils.convertReactPropstoHtmlAttributes)(childProps);
 
@@ -1482,8 +1475,8 @@ _extends({}, newChildProps, this.mapNestedChildrenToProps(child, nestedChildren)
             };
     }
 
-    throw new Error(&#x22;&#x3c;&#x22; + child.type + &#x22; /&#x3e; elements are self-closing and can not contain children. Refer to our API for more information
-.&#x22;);
+    throw new Error("&lt;" + child.type + " /&gt; elements are self-closing and can not contain children. Refer to our API for more information
+.");
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -1538,7 +1531,7 @@ _extends({}, newChildProps, this.mapNestedChildrenToProps(child, nestedChildren)
     <li>description and source-code<pre class="apidocCodePre">function render() {
     var _props = this.props,
         children = _props.children,
-        props = _objectWithoutProperties(_props, [&#x22;children&#x22;]);
+        props = _objectWithoutProperties(_props, ["children"]);
 
     var newProps = _extends({}, props);
 
@@ -1576,22 +1569,22 @@ _extends({}, newChildProps, this.mapNestedChildrenToProps(child, nestedChildren)
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function warnOnInvalidChildren(child, nestedChildren) {
-    if (process.env.NODE_ENV !== &#x22;production&#x22;) {
+    if (process.env.NODE_ENV !== "production") {
         if (!_HelmetConstants.VALID_TAG_NAMES.some(function (name) {
             return child.type === name;
         })) {
-            if (typeof child.type === &#x22;function&#x22;) {
-                return (0, _HelmetUtils.warn)(&#x22;You may be attempting to nest &#x3c;Helmet&#x3e; components within each other, which is not
- allowed. Refer to our API for more information.&#x22;);
+            if (typeof child.type === "function") {
+                return (0, _HelmetUtils.warn)("You may be attempting to nest &lt;Helmet&gt; components within each other, which is not
+ allowed. Refer to our API for more information.");
             }
 
-            return (0, _HelmetUtils.warn)(&#x22;Only elements types &#x22; + _HelmetConstants.VALID_TAG_NAMES.join(&#x22;, &#x22;) + &#x22; are allowed.
-Helmet does not support rendering &#x3c;&#x22; + child.type + &#x22;&#x3e; elements. Refer to our API for more information.&#x22;);
+            return (0, _HelmetUtils.warn)("Only elements types " + _HelmetConstants.VALID_TAG_NAMES.join(", ") + " are allowed.
+Helmet does not support rendering &lt;" + child.type + "&gt; elements. Refer to our API for more information.");
         }
 
-        if (nestedChildren &#x26;&#x26; typeof nestedChildren !== &#x22;string&#x22;) {
-            throw new Error(&#x22;Helmet expects a string as a child of &#x3c;&#x22; + child.type + &#x22;&#x3e;. Did you forget to wrap your children in
- braces? ( &#x3c;&#x22; + child.type + &#x22;&#x3e;{``}&#x3c;/&#x22; + child.type + &#x22;&#x3e; ) Refer to our API for more information.&#x22;);
+        if (nestedChildren &amp;&amp; typeof nestedChildren !== "string") {
+            throw new Error("Helmet expects a string as a child of &lt;" + child.type + "&gt;. Did you forget to wrap your children in
+ braces? ( &lt;" + child.type + "&gt;{``}&lt;/" + child.type + "&gt; ) Refer to our API for more information.");
         }
     }
 
@@ -1683,7 +1676,7 @@ _extends({}, newChildProps, this.mapNestedChildrenToProps(child, nestedChildren)
 
         var _child$props = child.props,
             nestedChildren = _child$props.children,
-            childProps = _objectWithoutProperties(_child$props, [&#x22;children&#x22;]);
+            childProps = _objectWithoutProperties(_child$props, ["children"]);
 
         var newChildProps = (0, _HelmetUtils.convertReactPropstoHtmlAttributes)(childProps);
 
@@ -1752,8 +1745,8 @@ _extends({}, newChildProps, this.mapNestedChildrenToProps(child, nestedChildren)
             };
     }
 
-    throw new Error(&#x22;&#x3c;&#x22; + child.type + &#x22; /&#x3e; elements are self-closing and can not contain children. Refer to our API for more information
-.&#x22;);
+    throw new Error("&lt;" + child.type + " /&gt; elements are self-closing and can not contain children. Refer to our API for more information
+.");
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -1818,7 +1811,7 @@ _extends({}, newChildProps, this.mapNestedChildrenToProps(child, nestedChildren)
     <li>description and source-code<pre class="apidocCodePre">function render() {
     var _props = this.props,
         children = _props.children,
-        props = _objectWithoutProperties(_props, [&#x22;children&#x22;]);
+        props = _objectWithoutProperties(_props, ["children"]);
 
     var newProps = _extends({}, props);
 
@@ -1866,22 +1859,22 @@ _extends({}, newChildProps, this.mapNestedChildrenToProps(child, nestedChildren)
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function warnOnInvalidChildren(child, nestedChildren) {
-    if (process.env.NODE_ENV !== &#x22;production&#x22;) {
+    if (process.env.NODE_ENV !== "production") {
         if (!_HelmetConstants.VALID_TAG_NAMES.some(function (name) {
             return child.type === name;
         })) {
-            if (typeof child.type === &#x22;function&#x22;) {
-                return (0, _HelmetUtils.warn)(&#x22;You may be attempting to nest &#x3c;Helmet&#x3e; components within each other, which is not
- allowed. Refer to our API for more information.&#x22;);
+            if (typeof child.type === "function") {
+                return (0, _HelmetUtils.warn)("You may be attempting to nest &lt;Helmet&gt; components within each other, which is not
+ allowed. Refer to our API for more information.");
             }
 
-            return (0, _HelmetUtils.warn)(&#x22;Only elements types &#x22; + _HelmetConstants.VALID_TAG_NAMES.join(&#x22;, &#x22;) + &#x22; are allowed.
-Helmet does not support rendering &#x3c;&#x22; + child.type + &#x22;&#x3e; elements. Refer to our API for more information.&#x22;);
+            return (0, _HelmetUtils.warn)("Only elements types " + _HelmetConstants.VALID_TAG_NAMES.join(", ") + " are allowed.
+Helmet does not support rendering &lt;" + child.type + "&gt; elements. Refer to our API for more information.");
         }
 
-        if (nestedChildren &#x26;&#x26; typeof nestedChildren !== &#x22;string&#x22;) {
-            throw new Error(&#x22;Helmet expects a string as a child of &#x3c;&#x22; + child.type + &#x22;&#x3e;. Did you forget to wrap your children in
- braces? ( &#x3c;&#x22; + child.type + &#x22;&#x3e;{``}&#x3c;/&#x22; + child.type + &#x22;&#x3e; ) Refer to our API for more information.&#x22;);
+        if (nestedChildren &amp;&amp; typeof nestedChildren !== "string") {
+            throw new Error("Helmet expects a string as a child of &lt;" + child.type + "&gt;. Did you forget to wrap your children in
+ braces? ( &lt;" + child.type + "&gt;{``}&lt;/" + child.type + "&gt; ) Refer to our API for more information.");
         }
     }
 
@@ -1918,7 +1911,7 @@ Helmet does not support rendering &#x3c;&#x22; + child.type + &#x22;&#x3e; eleme
             noscriptTags: [],
             scriptTags: [],
             styleTags: [],
-            title: &#x22;&#x22;,
+            title: "",
             titleAttributes: {}
         });
     }
@@ -1945,7 +1938,7 @@ Helmet does not support rendering &#x3c;&#x22; + child.type + &#x22;&#x3e; eleme
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function convertReactPropstoHtmlAttributes(props) {
-    var initAttributes = arguments.length &#x3e; 1 &#x26;&#x26; arguments[1] !== undefined ? arguments[1] : {};
+    var initAttributes = arguments.length &gt; 1 &amp;&amp; arguments[1] !== undefined ? arguments[1] : {};
 
     return Object.keys(props).reduce(function (obj, key) {
         obj[_HelmetConstants.HTML_TAG_MAP[key] || key] = props[key];
@@ -2041,7 +2034,7 @@ Helmet does not support rendering &#x3c;&#x22; + child.type + &#x22;&#x3e; eleme
         scriptTags = _ref.scriptTags,
         styleTags = _ref.styleTags,
         _ref$title = _ref.title,
-        title = _ref$title === undefined ? &#x22;&#x22; : _ref$title,
+        title = _ref$title === undefined ? "" : _ref$title,
         titleAttributes = _ref.titleAttributes;
     return {
         base: getMethodsForTag(_HelmetConstants.TAG_NAMES.BASE, baseTag, encode),
@@ -2124,7 +2117,7 @@ TAG_PROPERTIES.CHARSET, _HelmetConstants.TAG_PROPERTIES.HTTPEQUIV, _HelmetConsta
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function warn(msg) {
-    return console &#x26;&#x26; typeof console.warn === &#x22;function&#x22; &#x26;&#x26; console.warn(msg);
+    return console &amp;&amp; typeof console.warn === "function" &amp;&amp; console.warn(msg);
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
 
@@ -2134,7 +2127,7 @@ return function (id) {
 }();
 
 var warn = function warn(msg) {
-return console &#x26;&#x26; typeof console.warn === &#x22;function&#x22; &#x26;&#x26; console.<span class="apidocCodeKeywordSpan
+return console &amp;&amp; typeof console.warn === "function" &amp;&amp; console.<span class="apidocCodeKeywordSpan
 ">warn</span>(msg);
 };
 
@@ -2155,3 +2148,4 @@ var baseTag = newState.baseTag,
     ]
 </div>
 </div>
+</body></html>
