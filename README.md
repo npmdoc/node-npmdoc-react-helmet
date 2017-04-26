@@ -1,6 +1,6 @@
 # npmdoc-react-helmet
 
-#### api documentation for  [react-helmet (v5.0.3)](https://github.com/nfl/react-helmet#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-react-helmet.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-react-helmet) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-react-helmet.svg)](https://travis-ci.org/npmdoc/node-npmdoc-react-helmet)
+#### basic api documentation for  [react-helmet (v5.0.3)](https://github.com/nfl/react-helmet#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-react-helmet.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-react-helmet) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-react-helmet.svg)](https://travis-ci.org/npmdoc/node-npmdoc-react-helmet)
 
 #### A document head manager for React
 
@@ -142,7 +142,8 @@
         "pretest": "npm run clean && npm run lint",
         "test": "cross-env BABEL_ENV=test karma start karma.config.js"
     },
-    "version": "5.0.3"
+    "version": "5.0.3",
+    "bin": {}
 }
 ```
 
